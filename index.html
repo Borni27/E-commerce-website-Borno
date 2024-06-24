@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borno</title>
+    <link
+    rel="icon" href="images/index_icon.png" type="image/x-icon"/>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- navbar starts here -->
+   <i class="fas fa-bars fa-2x" id="menu-icon" ></i>
+    <nav id="menu" class="hidden">
+        
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav__link" target="_blank">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav__link" target="_blank">Register</a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav__link" target="_blank">Login</a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav__link" target="_blank">Logout</a>
+            </li>
+            <li class="nav-list">
+                <a href="product.html" class="nav__link" target="_blank">Product</a>
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav__link" target="_blank">Cart</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav__link" target="_blank">Contact</a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" ><img src="images/sunflower.jpg" alt="" class="profile__image" target="_blank"></a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav__link nav__brand">Borno<span class="flower">🌸</span>
+                    <p class="sub-quote">for your aesthetic girly desires...</p></a>
+               
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav__link for-cart" target="_blank"><span><i class="fa-solid fa-cart-shopping"> Cart 2 products - 450tk</i></span></a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- header starts here -->
+     <header class="header">
+        <div class="banner flex-space-around">
+            <marquee behavior="" direction="" class="banner__title">Eid Sale is still going on !!!</marquee>
+            <div class="features flex-space-around">
+                <article class="feature center__content">
+                    <i class="fas fa-shipping-fast feature__icon"></i>
+                    <h3>Shipping within 7 days</h3>
+                </article>
+                <article class="feature center__content">
+                    <i class="fas fa-comment-dots feature__icon"></i>
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature center__content">
+                    <i class="fa-solid fa-credit-card feature__icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+        
+     </header>
+
+    <!-- header ends here -->
+     
+     <!-- main section starts here -->
+      <main class="center__content">
+        <div class="side-bar">
+            <section class="categories-section">
+                <h3 class="section-title">Categories</h3>
+                <ul class="list">
+                    <li class="list__item">
+                        <label for="neckpieces">
+                            <input type="checkbox" name="neckpieces" id="neckpieces">Neckpieces
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="earrings">
+                            <input type="checkbox" name="earrings" id="earrings">Earrings
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="Dresses">
+                            <input type="checkbox" name="Dresses" id="Dresses">Dresses
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="hair__accessories">
+                            <input type="checkbox" name="hair__accessories" id="hair__accessories">Hair accessories
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="Watches">
+                            <input type="checkbox" name="Watches" id="Watches">Watches
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="rings">
+                            <input type="checkbox" name="rings" id="rings">Rings
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="price__range-section">
+                <h3 class="section-title">Price Range</h3>
+                <ul class="list">
+                    <li class="list__item">
+                        <label for="price1">
+                            <input type="radio" name="price" id="price1"  value="[100,200]">100-200tk
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price2">
+                            <input type="radio" name="price" id="price2" value="[200,500]">201-500tk
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price3">
+                            <input type="radio" name="price" id="price3" value="[500,1000]">501-1000tk
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price4">
+                            <input type="radio" name="price" id="price4" value="[1000,5000]">1001-5000tk
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price5">
+                            <input type="radio" name="price" id="price5">5001tk++
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="shipping-option">
+            <h3 class="section-title">Shipping Options</h3>
+            <ul class="list">
+                <li class="list__item">
+                    <label for="free">
+                        <input type="radio" name="shipping" id="free"  value="free">Free
+                    </label>
+                </li>
+                <li class="list__item">
+                    <label for="paid">
+                        <input type="radio" name="shipping" id="paid" value="paid">Paid
+                    </label>
+                </li>
+                
+            </ul>
+        </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <section class="action__sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Cheapest first</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Biggest discount first</option>
+                    </select>
+                </section>
+                <section class="action__search">
+                    <input type="text" name="" id="" placeholder="search product">
+                    <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </section>
+
+            </section>
+            <!-- products start here -->
+
+            <section class="products ">
+                <article class="product card">
+                    <div class="badge">
+                        
+                        <span>5 in stock</span><hr class="hr__deisgn"><span>12  sold</span>
+                    </div>
+                    <img src="images/earring.jpg" alt="">
+                    <div class="products__body">
+                        <h3 class="products__name">Butterfly stud</h3>
+                        <p>
+                            <span class="dots pink"></span>
+                            <span class="dots lavi"></span>
+                            <span class="dots blue"></span>
+                        </p>
+                        <p class="products__desc">Bow stud earringsstyle:simplesize: 4cmcolor: As pictureStyle: TRENDYShape\pattern: MoonOrigin: Mainland ChinaMetals ... <a href="product.html" class="learn-more" target="_blank">Learn more</a></p>
+                        <p class="product__price">Price:120tk</p>
+                        <p class="product__rating">Rating:4.5/5</p>
+                        <button class="btn btn__addtocart">Add to cart</button>
+                       
+                    
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        
+                        <span>3 in stock</span><hr class="hr__deisgn"><span>20  sold</span>
+                    </div>
+                    <img src="images/butterfly.jpg" alt="">
+                    <div class="products__body">
+                        <h3 class="products__name">Heart Necklace</h3>
+                        <p>
+                            <span class="dots pink"></span>
+                            <span class="dots lavi"></span>
+                            <span class="dots blue"></span>
+                        </p>
+                        <p class="products__desc">Gold Butterfly Necklace Dainty Butterfly Necklace Personalized Gifts for Kids Girls Gold Butterfly Necklace For Kids Jewelry for Women Item Detail...
+                            <a href="product.html" class="learn-more" target="_blank">Learn more</a></p>
+                        <p class="product__price">Price:150tk</p>
+                        <p class="product__rating">Rating:4.8/5</p>
+                        <button class="btn btn__addtocart">Add to cart</button>
+                    
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        
+                        <span>5 in stock</span><hr class="hr__deisgn"><span>10  sold</span>
+                    </div>
+                    <img src="images/frock2.jpg" alt="">
+                    <div class="products__body">
+                        <h3 class="products__name">Long gown</h3>
+                        <p>
+                            <span class="dots pink"></span>
+                            <span class="dots lavi"></span>
+                            <span class="dots blue"></span>
+                        </p>
+                        <p class="products__desc">Pink gown style frock for girls in adult size.Long:46inch.Size available for 32-46 inch color available in 3 color....
+                            <a href="product.html" class="learn-more"  target="_blank">Learn more</a></p>
+                        <p class="product__price">Price:150tk</p>
+                        <p class="product__rating">Rating:4.8/5</p>
+                        <button class="btn btn__addtocart">Add to cart</button>
+                    
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        
+                        <span>5 in stock</span><hr class="hr__deisgn"><span>10  sold</span>
+                    </div>
+                    <img src="images/hair.jpg" alt="">
+                    <div class="products__body">
+                        <h3 class="products__name">Multicolor hair accessories</h3>
+                        <p>
+                            <span class="dots pink"></span>
+                            <span class="dots lavi"></span>
+                            <span class="dots blue"></span>
+                        </p>
+                        <p class="products__desc">Multi color hair accessories for women of different ages in different sizes available also avalable in 3 color....
+                            <a href="product.html" class="learn-more" target="_blank">Learn more</a></p>
+                        <p class="product__price">Price:200tk</p>
+                        <p class="product__rating">Rating:4.8/5</p>
+                        <button class="btn btn__addtocart">Add to cart</button>
+                    
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        
+                        <span>5 in stock</span><hr class="hr__deisgn"><span>10  sold</span>
+                    </div>
+                    <img src="images/watch.jpg" alt="">
+                    <div class="products__body">
+                        <h3 class="products__name">Watch</h3>
+                        <p>
+                            <span class="dots pink"></span>
+                            <span class="dots lavi"></span>
+                            <span class="dots blue"></span>
+                        </p>
+                        <p class="products__desc">Golden watch for young women of different ages in different sizes available also avalable in 3 color....
+                            <a href="product.html" class="learn-more" target="_blank">Learn more</a></p>
+                        <p class="product__price">Price:1050tk</p>
+                        <p class="product__rating">Rating:4.8/5</p>
+                        <button class="btn btn__addtocart">Add to cart</button>
+                    
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        
+                        <span>5 in stock</span><hr class="hr__deisgn"><span>10  sold</span>
+                    </div>
+                    <img src="images/rings.jpg" alt="">
+                    <div class="products__body">
+                        <h3 class="products__name">Multicolor rings</h3>
+                        <p>
+                            <span class="dots pink"></span>
+                            <span class="dots lavi"></span>
+                            <span class="dots blue"></span>
+                        </p>
+                        <p class="products__desc">Multi color rings for women of different ages in different sizes available also avalable in 3 color....
+                            <a href="product.html" class="learn-more" target="_blank">Learn more</a></p>
+                        <p class="product__price">Price:105tk</p>
+                        <p class="product__rating">Rating:4.8/5</p>
+                        <button class="btn btn__addtocart">Add to cart</button>
+                    
+                    </div>
+                </article>
+            </section>
+             <!-- products end here -->
+
+             <!-- pagination starts here -->
+              <div class="pagination">
+                <button class="btn btn__pagination ">
+                    <i class="fab fa-less-than"></i>
+                </button>
+                <button class="btn btn__pagination">2</button>
+                <button class="btn btn__pagination">3</button>
+                <button class="btn btn__pagination">4</button>
+                <button class="btn btn__pagination">5</button>
+                <button class="btn btn__pagination">6</button>
+                <button class="btn btn__pagination">7</button>
+                <button class="btn btn__pagination">8</button>
+                <button class="btn btn__pagination">9</button>
+                <button class="btn btn__pagination">10</button>
+                <button class="btn btn__pagination">...</button>
+                <button class="btn btn__pagination">50</button>
+
+
+
+
+                <button class="btn btn__pagination">
+                    <i class="fab fa-greater-than"></i>
+                </button>
+              </div>
+
+             <!-- pagination ends here -->
+
+             
+
+
+        </div>
+      </main>
+      <!-- main section  ends here -->
+     <!-- footer starts here -->
+      <footer class="footer flex-space-around">
+        <div class="flex-space-around footer__items">
+            <label for="subscribe">Subscribe to Newsletter</label>
+            <input type="email" name="subscribe" id="subscribe" class="footer__input" placeholder="Your email address">
+            <button class="btn btn__subscribe">subscribe</button>
+
+        </div>
+        <div>
+            <p class="copyright__text">&copy; Copyright Borno.All rights reserved</p>
+        </div>
+      </footer>
+
+      <!-- footer ends here -->
+
+     <script src="index.js"></script>
+    
+    
+</body>
+</html>

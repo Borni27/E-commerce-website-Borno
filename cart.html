@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link
+    rel="icon" href="images/cart_icon.png" type="image/x-icon"/>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- navbar starts here -->
+   <i class="fas fa-bars fa-2x" id="menu-icon" ></i>
+    <nav id="menu" class="hidden">
+        
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav-list">
+                <a href="product.html" class="nav__link">Product</a>
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav__link">Cart</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" ><img src="images/sunflower.jpg" alt="" class="profile__image"></a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav__link nav__brand">Borno<span class="flower">🌸</span>
+                    <p class="sub-quote">for your aesthetic girly desires...</p></a>
+               
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav__link for-cart"><span><i class="fa-solid fa-cart-shopping"> Cart 2 products - 450tk</i></span></a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+     <!-- main section starts here -->
+      <main>
+        <div class="cart center__content">
+            <div class="cart__items">
+                <div class="cart-items__heading card">
+                    <h2>Shopping cart [2 items]</h2>
+                    <div class="cart-items__action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">Select all items
+                        </label>
+                        <button class="btn1"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn1">Shop more</button>
+                    </div>
+                </div>
+                
+                    <div class="cart__item card flex-space-around">
+                        <input type="checkbox" name="" id="">
+                        <img src="images/hair.jpg" alt="hair accessory" class="cart-item__img">
+                        <div class="cart-item__description">
+                            <h3 class="product__name">Multicolor hair accessories</h3>
+                            <h4 class="product__price">Price:200tk</h4>
+                            <p class="cart__item-shipping">Free shipping</p>
+                        </div>
+                        <div class="cart-item__actions">
+                            <button class="btn1"><i class="fas fa-trash-alt"></i></button>
+                            <div class="plus__minus">
+                                <button class="btn1"><i class="fas fa-add"></i></button><span class="number">3</span>
+                                <button class="btn1"><i class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__item card flex-space-around"><input type="checkbox" name="" id="">
+                        <img src="images/watch.jpg" alt="hair accessory" class="cart-item__img">
+                        <div class="cart-item__description">
+                            <h3 class="product__name">Watch</h3>
+                            <h4 class="product__price">Price:1050tk</h4>
+                            <p class="cart__item-shipping">Free shipping</p>
+                        </div>
+                        <div class="cart-item__actions">
+                            <button class="btn1"><i class="fas fa-trash-alt"></i></button>
+                            <div class="plus__minus">
+                                <button class="btn1"><i class="fas fa-add"></i></button><span class="number">3</span>
+                                <button class="btn1"><i class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="cart__payment">
+                <div class="cart__payment-summary card">
+                    <h2>Payment Summary</h2>
+                    <div>
+                        <p>Subtotal:200tk</p>
+                        <p>200tk</p>
+                        
+                    </div>
+                    <div>
+                        <p>Shipping cost:</p>
+                        <p>0tk</p>
+                    </div>
+                    <div>
+                        <p>Total cost:</p>
+                        <p>200tk</p>
+                    </div>
+                    <button class="btn1 btn__payment">Pay now</button>
+
+                    </div>
+                    <div class="cart__payment-methods card">
+                        <h2>Payment Methods</h2>
+                        <div>
+                            <i class="fa-brands fa-cc-visa 4x"></i>
+                            <i class="fa-brands fa-cc-apple-pay 3x"></i>
+                            <i class="fa-brands fa-cc-amex 3x"></i>
+                            <i class="fa-brands fa-cc-paypal 3x"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <!-- main section  ends here -->
+     <!-- footer starts here -->
+     <footer class="footer flex-space-around">
+        <div class="flex-space-around footer__items">
+            <label for="subscribe">Subscribe to Newsletter</label>
+            <input type="email" name="subscribe" id="subscribe" class="footer__input" placeholder="Your email address">
+            <button class="btn btn__subscribe">subscribe</button>
+
+        </div>
+        <div>
+            <p class="copyright__text">&copy; Copyright Borno.All rights reserved</p>
+        </div>
+      </footer>
+
+      <!-- footer ends here -->
+
+     <script src="index.js"></script>
+    
+</body>
+</html>
